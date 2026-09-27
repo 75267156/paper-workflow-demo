@@ -1,0 +1,14 @@
+这是我专门创建的 paper-workflow-demo 测试仓库。我授权你完成 EXP-001，
+提交本任务相关改动并推送到该测试仓库当前分支；不要修改其他仓库或 force push。
+
+先核对当前仓库、分支、git status 和 origin；有意外本地修改时不要覆盖。
+工作树干净且分支正确时先 git pull --ff-only。
+读取项目规则、.ai/INDEX.md 和 EXP-001 的 TASK/HANDOFF；确认尚未完成。
+代码和配置应已有提交。执行任务，运行独立 validate 命令。
+完成后先提交 results/EXP-001/EXP-001-R01/，记录这个真实提交号。
+再更新 EXP-001/HANDOFF.md：填写实际任务 revision、run_id、执行状态、
+仓库、分支、results_commit、相对结果路径、简短观察、验证命令与限制。
+检查 manifest 中的代码 commit 和 dirty 状态，如有异常如实说明。
+向 notes/experiment-log.md 追加 observation / hypothesis / decision；
+不要凭空添加假说。随后提交交接报告和日志，并 push。
+最后只给我：任务状态、已推送分支、结果提交号、handoff 路径、是否通过校验。

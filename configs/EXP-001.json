@@ -1,0 +1,7 @@
+{
+  "experiment_id": "EXP-001",
+  "seeds": [42, 123, 2026],
+  "windows": [1, 3, 7],
+  "n_points": 240,
+  "noise_std": 0.35
+}

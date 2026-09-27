@@ -1,0 +1,15 @@
+请使用 GitHub 插件读取测试仓库，保持在 Chat 聊天模式。
+仓库：<替换为 owner/repo>
+分支：main
+
+读取 .ai/tasks/EXP-001/HANDOFF.md。按其中 results_commit 和仓库根目录相对路径，
+实际读取 metrics.csv、summary.csv、manifest.json，以及 EXP-001/TASK.md。
+如果工具不支持指定 commit，请明确说明；改为读取当前分支文件并核对返回版本或文件哈希，
+无法确认一致性时停止作出数值结论，并列出缺失的证据。
+
+检查九个 window/seed 组合是否完整唯一、平均值和样本标准差定义是否明确。
+说明你实际完成了哪些核对；不要声称执行了你没有运行的 Python 校验。
+先给出 300 字以内分析，再参照 .ai/templates/REPORT_TASK.md 生成一份完整 REPORT-002/TASK.md。
+填写真实 evidence_commit、run_id 和 evidence 路径；明确要求讨论实际误差与峰值衰减的权衡。
+本任务只生成 reports/REPORT-002.md 和对应交接记录，不重跑实验、不修改原始结果。
+输出可以直接复制保存的 TASK 文件全文。本轮不要直接写仓库。

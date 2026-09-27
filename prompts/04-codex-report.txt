@@ -1,0 +1,14 @@
+请在这个测试仓库保存我下面粘贴的网页 Chat TASK，路径为 .ai/tasks/REPORT-002/TASK.md。
+确认其中没有未填占位符，依赖 EXP-001 已完成；把 .ai/INDEX.md 的当前入口改为 REPORT-002。
+先保存并提交任务，再执行。只有依赖和证据校验通过才继续。
+我授权你提交本任务相关文件并推送到该测试仓库当前分支，不得 force push。
+
+核对 TASK 指定的 evidence_commit 中三份输入文件与当前工作树相同路径内容一致。
+运行 TASK 中 validate 和 report 命令，然后检查生成报告是否满足 Required discussion。
+必要时仅修改报告文字来完成讨论；所有数值必须与 CSV 一致，不得改输入证据。
+创建对应 HANDOFF，记录任务 revision、状态、输入证据版本、报告路径和真实验证结果。
+先提交报告，再把报告的真实提交号记录为 HANDOFF 的 outputs_commit，随后另行提交 HANDOFF 和日志。
+push 后报告最终路径和状态。
+
+以下是网页 Chat 生成的 TASK：
+<在这里粘贴完整 TASK>
