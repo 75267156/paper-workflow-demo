@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-001",
+  "run_id": "EXP-001-R01",
+  "created_utc": "2026-09-27T06:19:17.311233+00:00",
+  "python": "3.12.7",
+  "config": {
+    "experiment_id": "EXP-001",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "windows": [
+      1,
+      3,
+      7
+    ],
+    "n_points": 240,
+    "noise_std": 0.35
+  },
+  "git": {
+    "commit": "afe1ee4c28f0f2826324f885b0441a7f83ab6050",
+    "dirty": false
+  },
+  "source_hashes": {
+    "scripts/demo.py": "e3fceffb883576118eada16c8d8d086d91083d66e53770e43b412ce40e2da83c",
+    "configs/EXP-001.json": "e33c6762271cbaf643fa86437061d51c7c193d0595ef25356f2e94a4bcdf9ab5"
+  },
+  "artifact_hashes": {
+    "signals.json": "6d1e94983a4974afd8c715788e5a0ab4583363dbdf6e68010d215ea20275c4fd",
+    "metrics.csv": "73147c1402bf148bb32de7268bea23ff86cfdb7424b9ac112279dedac1cfb5ad",
+    "summary.csv": "585727cc6a18814faf1f6469e19d49be639a33989c76460c29022e3131dccafc"
+  },
+  "definitions": {
+    "data": "Synthetic signal; no external dataset",
+    "signal": "sin(2*pi*i/40) + 0.5*sin(2*pi*i/10), i=0..239",
+    "boundary": "Centered moving average; clip window to available samples at edges",
+    "rmse": "sqrt(mean((smoothed-clean)^2)); lower is better",
+    "peak_attenuation": "mean(clean-smoothed) at true local maxima; zero means no mean loss; negative means overshoot",
+    "sd": "Sample standard deviation across three seeds (ddof=1); not a confidence interval"
+  }
+}
